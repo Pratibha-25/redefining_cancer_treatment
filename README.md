@@ -1,5 +1,5 @@
 # Personalized Medicine: Redefining Cancer Treatment
-
+ Personalized cancer medicine comes from studies of human genes and the genes in different cancers. These studies have helped researchers design more effective treatments. They have also used genetic information to develop tests for cancer and ways to prevent it.
 # Team Members:
  1. Monika Pant
  2. Prajwal Jaiswal
@@ -11,19 +11,21 @@
 Once sequenced, a cancer tumor can have thousands of genetic mutations. But the challenge is distinguishing the mutations that contribute to tumor growth (drivers) from the      neutral mutations (passangeras). We need to develop a Machine Learning algorithm that, using this knowledge base as a baseline, automatically classifies genetic variations.
 
 # Data
-https://www.kaggle.com/c/msk-redefining-cancer-treatment/data
+Source: https://www.kaggle.com/c/msk-redefining-cancer-treatment/data
 
-# Data Description:
+Data Overview :
 
-. There are nine different classes a genetic mutation can be classified on.
+We have two data files: one conatins the information about the genetic mutations and the other contains the clinical evidence (text) that human experts/pathologists use to classify the genetic mutations.
 
-. This is not a trivial task since interpreting clinical evidence is very challenging even for human specialists. Therefore, modeling the clinical evidence (text) will be critical for the success of your approach.
+Both these data files are have a common column called ID
 
-. Both, training and test, data sets are provided via two different files. One (training/test_variants) provides the information about the genetic mutations, whereas the other (training/test_text) provides the clinical evidence (text) that our human experts used to classify the genetic mutations. Both are linked via the ID field.
+Data file's information:
 
-. Therefore the genetic mutation (row) with ID=15 in the file training_variants, was classified using the clinical evidence (text) from the row with ID=15 in the file training_text
+training_variants (ID , Gene, Variations, Class)
 
-. Finally, to make it more exciting!! Some of the test data is machine-generated to prevent hand labeling. You will submit all the results of your classification algorithm, and we will ignore the machine-generated samples.
+training_text (ID, Text)
 
 # References:
 cancer.org/latest-news/personalized-medicine-redefining-cancer-and-its-treatment.html
+forbes.com/sites/matthewherper/2017/06/03/a-new-cancer-drug-helped-almost-everyone-who-took-it-almost-heres-what-it-teaches-us/#2a44ee2f6b25
+youtube.com/watch?v=qxXRKVompI8
